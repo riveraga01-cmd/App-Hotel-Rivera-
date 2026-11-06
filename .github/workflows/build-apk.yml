@@ -113,6 +113,7 @@ jobs:
 
       - name: Compilar APK con Gradle
         run: |
+          chmod +x ./gradlew
           ./gradlew :app:assembleDebug --no-daemon --stacktrace
 
       - name: Generar y verificar APK en el módulo app
